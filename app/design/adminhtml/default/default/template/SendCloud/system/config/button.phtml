@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    function <?php echo $this->getScriptFunctionName()?>() {
+        var newTab = window.open('about:blank', 'blank');
+        new Ajax.Request('<?php echo $this->getAjaxCheckUrl() ?>', {
+            method: 'get',
+            onSuccess: function(transport) {
+                if (transport.responseText) {
+                    newTab.location = transport.responseText;
+                } else {
+                    newTab.close();
+                }
+            },
+            onFailure: newTab.close
+        });
+    }
+</script>
+
+<?php echo $this->getButtonHtml() ?>

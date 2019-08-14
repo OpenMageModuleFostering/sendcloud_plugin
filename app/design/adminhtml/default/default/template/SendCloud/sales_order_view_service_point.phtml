@@ -1,0 +1,14 @@
+<?php
+$_servicePointExtra = $this->getOrder()->getData('sendcloud_service_point_extra');
+if ($_servicePointExtra): ?>
+    <div class="box-left">
+        <div class="entry-edit">
+            <div class="entry-edit-head">
+                <h4 class="icon-head"><?php echo Mage::helper('SendCloud_Plugin')->__('Service Point') ?></h4>
+            </div>
+            <fieldset>
+                <?php echo join('<br>', explode('|', $_servicePointExtra)) ?>
+            </fieldset>
+        </div>
+    </div>
+<?php endif; ?>
