@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/SendCloud_Plugin",
+    "name": "OpenMageModuleFostering\/SendCloud_Plugin",
     "type": "magento-module",
     "license": "GPLv2",
     "homepage": "",
     "description": "SendCloud is the smart shipping solution for ecommerce. With SendCloud you can easily ship packages with multiple carriers.",
     "authors": [
-    {
-        "name": "SendCloud",
-        "email": "info@sendcloud.sc"
-    }
-],
+        {
+            "name": "SendCloud",
+            "email": "info@sendcloud.sc"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
