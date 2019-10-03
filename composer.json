@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/SendCloud_Plugin",
+    "name": "openmage-module-fostering\/sendcloud_plugin",
     "type": "magento-module",
     "license": "GPLv2",
     "homepage": "",
